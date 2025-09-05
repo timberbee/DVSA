@@ -3,6 +3,18 @@
   "Description": "The AWS CloudFormation template for this Serverless application",
   "Resources": {
     "ServerlessDeploymentBucket": {
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "user",
+            "Value": "pchandaliya"
+          },
+          {
+            "Key": "owner",
+            "Value": "pritesh"
+          }
+        ]
+      },
       "Type": "AWS::S3::Bucket"
     }
   },
